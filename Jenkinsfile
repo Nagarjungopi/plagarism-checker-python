@@ -17,7 +17,7 @@ pipeline {
         
         stage ('docker container') {
             steps{
-                sh 'docker run -t -it --name python -p 5000:5000 python:v1'
+                sh 'docker run -d -it --name python -p 5000:5000 python:v1'
             }
         }
     }
